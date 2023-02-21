@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/form.css" rel="stylesheet">
+    <script defer src="js/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+        integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
+    <title>Kalkulator walutowy</title>
+</head>
+
+<body class="body">
+
+    <form class="form js-form">
+        <fieldset class="form_fieldset">
+            <legend class="form_legend">Kalkulator walutowy</legend>
+            <label>
+                <span class="form_labelText">Kwota początkowa</span>
+                <span>PLN</span>
+
+                <select class="form_field js-selectOne" name="Waluta podstawowa">
+                    <option selected>PLN</option>
+                    <option>EUR</option>
+                    <option>USD</option>
+                    <option>CHF</option>
+                    <option>GBP</option>
+                </select> <input type="number" class="form_field js-initialAmount" name="amount" placeholder="kwota"
+                    required>
+            </label>
+            <p>
+                <label>
+                    <span class="form_labelText">Kwota końcowa</span>
+                    <span>EUR</span>
+                    <select class="form_field js-selectTwo" name="Waluta końcowa">
+                        <option>PLN</option>
+                        <option selected>EUR</option>
+                        <option>USD</option>
+                        <option>CHF</option>
+                        <option>GBP</option>
+                    </select> <input class="form_field js-finalAmount" name="amount" placeholder="wynik" readonly>
+                </label>
+            </p>
+
+
+            <p>
+                <label>
+                    <button class="form_button">Oblicz</button>
+                </label>
+            </p>
+
+
+        </fieldset>
+
+    </form>
+
+</body>
+
+</html>
