@@ -1,4 +1,4 @@
-# Corrency converter
+# Currency converter
 
 ## Demo
 https://oskars99.github.io/correncyconverter/
